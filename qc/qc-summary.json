@@ -1,0 +1,238 @@
+{
+  "baseline_second_diff_max_p95": 0.06398322506499998,
+  "looks": {
+    "Fieldnote": {
+      "clip_zero_frac": 0.0,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.0007363632624999908,
+      "white_err": 0.0,
+      "black_mean": 0.07584083756666667,
+      "midgray_dLstar": 2.634916407364557,
+      "midgray_target": 2.6,
+      "second_diff": {
+        "max": 0.19758431680000005,
+        "interior_max": 0.0927925383999999
+      },
+      "skin": {
+        "core_hue_disp_max": 0.004532832923770955,
+        "core_hue_drift_deg_max": 4.180466691614214,
+        "full_hue_drift_deg_max": 17.210538116031444,
+        "cross_exposure_disp_max": 0.003154598825801531,
+        "cross_exposure_deg_max": 2.008382806086871
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": false
+    },
+    "Heartland": {
+      "clip_zero_frac": 0.0,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.001600245674999997,
+      "white_err": 0.0,
+      "black_mean": 0.031066314866666667,
+      "midgray_dLstar": 3.982486096649822,
+      "midgray_target": 4.0,
+      "second_diff": {
+        "max": 0.11094561740000003,
+        "interior_max": 0.08632796610000015
+      },
+      "skin": {
+        "core_hue_disp_max": 0.006947640654996757,
+        "core_hue_drift_deg_max": 3.099855536014701,
+        "full_hue_drift_deg_max": 16.77405286798023,
+        "cross_exposure_disp_max": 0.0031248464897569933,
+        "cross_exposure_deg_max": 1.9894389985729504
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": false
+    },
+    "Meridian": {
+      "clip_zero_frac": 5.5652948214931685e-05,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.002455329399999928,
+      "white_err": 0.0,
+      "black_mean": 0.0,
+      "midgray_dLstar": 5.34430169714804,
+      "midgray_target": 5.4,
+      "second_diff": {
+        "max": 0.25645915880000003,
+        "interior_max": 0.07055349350000002
+      },
+      "skin": {
+        "core_hue_disp_max": 0.00032538427655944387,
+        "core_hue_drift_deg_max": 0.23468498902161627,
+        "full_hue_drift_deg_max": 3.8033388935815537,
+        "cross_exposure_disp_max": 0.0001261291977440003,
+        "cross_exposure_deg_max": 0.0802963477276819
+      },
+      "gray_de00_max": 0.012093624418524383,
+      "pass": true,
+      "needs_visual_smoothness_check": true
+    },
+    "Matinee": {
+      "clip_zero_frac": 3.7101965476621125e-05,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.0006200836624999997,
+      "white_err": 0.0,
+      "black_mean": 0.0,
+      "midgray_dLstar": -1.5608237419112925,
+      "midgray_target": -1.55,
+      "second_diff": {
+        "max": 0.12631642900000006,
+        "interior_max": 0.09933991
+      },
+      "skin": {
+        "core_hue_disp_max": 0.003945013626834304,
+        "core_hue_drift_deg_max": 3.5501324859935153,
+        "full_hue_drift_deg_max": 16.081894747675676,
+        "cross_exposure_disp_max": 0.0036623781279623174,
+        "cross_exposure_deg_max": 2.331703229510623
+      },
+      "calibration_direct_max_err": 1.2304640687257895e-07,
+      "calibration_table_max_err": 0.0015670563142592027,
+      "pass": true,
+      "needs_visual_smoothness_check": false
+    },
+    "Postcard": {
+      "clip_zero_frac": 9.275491369155281e-06,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.0005821360374999997,
+      "white_err": 0.0,
+      "black_mean": 2.5109666666666668e-06,
+      "midgray_dLstar": -0.9579941213282837,
+      "midgray_target": -0.95,
+      "second_diff": {
+        "max": 0.2271150289,
+        "interior_max": 0.1885353411
+      },
+      "skin": {
+        "core_hue_disp_max": 0.0022309085792941506,
+        "core_hue_drift_deg_max": 1.9762689112370992,
+        "full_hue_drift_deg_max": 10.298918501270009,
+        "cross_exposure_disp_max": 0.0020440659922613368,
+        "cross_exposure_deg_max": 1.301320796783898
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": true
+    },
+    "NightMarket": {
+      "clip_zero_frac": 0.0,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.001316125287499914,
+      "white_err": 0.0,
+      "black_mean": 0.045317767099999996,
+      "midgray_dLstar": -3.0059450221493833,
+      "midgray_target": -3.0,
+      "second_diff": {
+        "max": 0.17663321859999997,
+        "interior_max": 0.1349025009
+      },
+      "skin": {
+        "core_hue_disp_max": 0.0035806860324548552,
+        "core_hue_drift_deg_max": 3.570850675677292,
+        "full_hue_drift_deg_max": 18.015072496087356,
+        "cross_exposure_disp_max": 0.0027693278801585773,
+        "cross_exposure_deg_max": 1.7630784436665294
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": false
+    },
+    "DuskTide": {
+      "clip_zero_frac": 0.0,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.0006385213874998685,
+      "white_err": 0.0,
+      "black_mean": 0.033787722433333334,
+      "midgray_dLstar": -3.9918758755217354,
+      "midgray_target": -4.0,
+      "second_diff": {
+        "max": 0.18219888359999997,
+        "interior_max": 0.09104877590000016
+      },
+      "skin": {
+        "core_hue_disp_max": 0.005602602431345967,
+        "core_hue_drift_deg_max": 6.007493675483545,
+        "full_hue_drift_deg_max": 21.790960883686182,
+        "cross_exposure_disp_max": 0.0024330880268040424,
+        "cross_exposure_deg_max": 1.5489991187244527
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": false
+    },
+    "Canopy": {
+      "clip_zero_frac": 0.0,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.0016138983124998063,
+      "white_err": 0.0,
+      "black_mean": 0.0173674396,
+      "midgray_dLstar": 1.7687817670115322,
+      "midgray_target": 1.9,
+      "second_diff": {
+        "max": 0.19601347600000002,
+        "interior_max": 0.1401325008
+      },
+      "skin": {
+        "core_hue_disp_max": 0.005599553447157038,
+        "core_hue_drift_deg_max": 4.725545334573667,
+        "full_hue_drift_deg_max": 21.10762401432129,
+        "cross_exposure_disp_max": 0.004953605571872058,
+        "cross_exposure_deg_max": 3.153961446914394
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": false
+    },
+    "Skylight": {
+      "clip_zero_frac": 0.0,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.0026046582374998906,
+      "white_err": 0.0,
+      "black_mean": 0.02,
+      "midgray_dLstar": 3.431837645905432,
+      "midgray_target": 3.4,
+      "second_diff": {
+        "max": 0.27372127729999995,
+        "interior_max": 0.0658825086
+      },
+      "skin": {
+        "core_hue_disp_max": 0.00039339681182248615,
+        "core_hue_drift_deg_max": 0.3436369487602633,
+        "full_hue_drift_deg_max": 0.47395893572019077,
+        "cross_exposure_disp_max": 8.526233307172813e-05,
+        "cross_exposure_deg_max": 0.05427968910146319
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": true
+    },
+    "Lowsun": {
+      "clip_zero_frac": 0.0,
+      "clip_one_frac": 2.7826474107465842e-05,
+      "neutral_monotone": true,
+      "neutral_channel_min_step": 0.0012899717999999005,
+      "white_err": 0.0,
+      "black_mean": 0.014278480500000001,
+      "midgray_dLstar": -0.9914971235132697,
+      "midgray_target": -1.0,
+      "second_diff": {
+        "max": 0.17843325899999998,
+        "interior_max": 0.11949799150000001
+      },
+      "skin": {
+        "core_hue_disp_max": 0.008005611423314057,
+        "core_hue_drift_deg_max": 5.02843490436527,
+        "full_hue_drift_deg_max": 12.424468003221193,
+        "cross_exposure_disp_max": 0.002656544743817261,
+        "cross_exposure_deg_max": 1.6912703114318504
+      },
+      "pass": true,
+      "needs_visual_smoothness_check": false
+    }
+  }
+}

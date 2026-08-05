@@ -1,0 +1,9 @@
+# Core (generate.py, qc_looks.py)
+numpy
+scipy
+# Previews (render_previews.py, render_demo.py)
+pillow
+# RAW demo rendering only (render_demo.py)
+rawpy
+# Charts only
+matplotlib

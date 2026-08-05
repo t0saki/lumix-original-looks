@@ -1,0 +1,1537 @@
+{
+  "project": "lumix-original-looks",
+  "generated_at": "2026-08-05T22:46:19",
+  "generator_version": "1.0",
+  "method": "Parametric original looks computed from scratch: display sRGB in -> linear -> monotone Hermite tone on OKLab L -> OKLCh hue/sat/split operators with suite-standard skin window (OKLCh 30-70deg, +/-12 raised-cosine feather) -> constant-L constant-hue gamut projection -> display sRGB out",
+  "output_grid": 33,
+  "input_photo_style": "STD",
+  "input_colourspace": "sRGB (display-referred), Rec.709 primaries",
+  "opacity_note": "70% previews simulate in-camera LUT opacity as 0.7*LUT(x) + 0.3*x in output sRGB code; this matches the assumed camera blend and is a working assumption pending an on-camera A/B check",
+  "looks": [
+    {
+      "name": "Fieldnote",
+      "file": "Fieldnote.cube",
+      "version": "1.0",
+      "group": "generalist",
+      "description": "Neutral C-41 style daily negative: long toe, slate/straw split, restrained color",
+      "opacity_rec": "85-100%; night markets / infant close-ups 70-80%",
+      "grain_rec": "OFF (backup: finest ~10/100, flat overcast only)",
+      "sha256": "ea32f5690d566342d5a50636ee59b716d59f89e9800207a8e9257e1093844d0d",
+      "recipe": {
+        "description": "Neutral C-41 style daily negative: long toe, slate/straw split, restrained color",
+        "tone": {
+          "domain": "lstar",
+          "points": [
+            [
+              0.0,
+              6.0
+            ],
+            [
+              30.0,
+              29.439999999999998
+            ],
+            [
+              46.0,
+              48.0
+            ],
+            [
+              78.0,
+              85.12
+            ],
+            [
+              100.0,
+              100.0
+            ]
+          ],
+          "slopes": {
+            "0": 0.3,
+            "1": 1.1600000000000001,
+            "2": 1.1600000000000001,
+            "3": 1.1600000000000001,
+            "4": 0.3
+          }
+        },
+        "midtone_bias": {
+          "hue": 78.0,
+          "chroma": 0.011000000000000001,
+          "l_center": 55.0,
+          "l_sigma": 16.0,
+          "l_zero_lo": 18.0,
+          "l_zero_hi": 88.0,
+          "skin_residual": 0.13636363636363635
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "bump",
+            "hue": 235.0,
+            "c_peak": 0.022000000000000002,
+            "l_peak": 12.0,
+            "halfwidth": 40.0,
+            "skin_residual": 0.13636363636363635
+          },
+          {
+            "kind": "highlight",
+            "shape": "rise",
+            "hue": 90.0,
+            "c_peak": 0.013200000000000002,
+            "l_rise_from": 56.0,
+            "l_peak": 80.0,
+            "skin_residual": 0.13636363636363635
+          }
+        ],
+        "hue_shifts": [
+          {
+            "center": 25.0,
+            "halfwidth": 34.32,
+            "delta": 5.4
+          },
+          {
+            "center": 140.0,
+            "halfwidth": 51.48,
+            "delta": -10.8
+          },
+          {
+            "center": 215.0,
+            "halfwidth": 45.76,
+            "delta": 9.0
+          },
+          {
+            "center": 300.0,
+            "halfwidth": 40.04,
+            "delta": 7.2
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 140.0,
+            "halfwidth": 55.0,
+            "gain": 0.8480000000000001
+          },
+          {
+            "center": 230.0,
+            "halfwidth": 50.0,
+            "gain": 0.9049999999999999
+          },
+          {
+            "center": 330.0,
+            "halfwidth": 45.0,
+            "gain": 0.81
+          },
+          {
+            "center": 100.0,
+            "halfwidth": 30.0,
+            "gain": 0.9239999999999999
+          }
+        ],
+        "global_sat": 0.8859999999999999,
+        "vibrance": {
+          "c_lo": 0.05,
+          "c_hi": 0.09,
+          "gain": 1.114
+        },
+        "chroma_knee": {
+          "start": 0.1265,
+          "slope": 0.6,
+          "cap": 0.184
+        },
+        "lum_desat_shadow": {
+          "l_end": 20.0,
+          "gain_at_0": 0.715
+        },
+        "lum_desat_high": {
+          "l_start": 92.0,
+          "l_end": 99.0,
+          "gain_end": 0.0,
+          "c_fade": [
+            0.1,
+            0.2
+          ]
+        },
+        "skin_lightening": {
+          "delta_lstar": 2.0,
+          "l_center": 58.0,
+          "l_sigma": 15.0,
+          "l_zero_lo": 35.0,
+          "l_zero_hi": 80.0
+        },
+        "skin_hue_residual": 0.08333333333333333,
+        "skin_tone_residual": 0.13636363636363635,
+        "skin_sat_clamp": [
+          0.97,
+          1.02
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.026400000000000003
+        },
+        "opacity_rec": "85-100%; night markets / infant close-ups 70-80%",
+        "grain_rec": "OFF (backup: finest ~10/100, flat overcast only)"
+      }
+    },
+    {
+      "name": "Heartland",
+      "file": "Heartland.cube",
+      "version": "1.0",
+      "group": "generalist",
+      "description": "Warm people-first daily negative: amber midtones, slate shadows, creamy highlights",
+      "opacity_rec": "75-85%",
+      "grain_rec": "OFF (backup: ~5/100, dim indoor portraits only)",
+      "sha256": "ee2b14225ca4aad092c4d64a4ed7a0824cc76f3357041d381994948815fd3c4a",
+      "recipe": {
+        "description": "Warm people-first daily negative: amber midtones, slate shadows, creamy highlights",
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.03
+            ],
+            [
+              0.1,
+              0.11599999999999999
+            ],
+            [
+              0.466,
+              0.5056
+            ],
+            [
+              0.8,
+              0.8439999999999999
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "2": 1.1600000000000001,
+            "4": 0.3
+          }
+        },
+        "midtone_bias": {
+          "hue": 70.0,
+          "chroma": 0.0182,
+          "l_center": 55.0,
+          "l_sigma": 16.0,
+          "l_zero_lo": 15.0,
+          "l_zero_hi": 90.0,
+          "skin_residual": 0.15384615384615385
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "low",
+            "hue": 220.0,
+            "c_peak": 0.020800000000000003,
+            "l_peak": 15.0,
+            "l_zero": 55.0,
+            "skin_residual": 0.15384615384615385
+          },
+          {
+            "kind": "highlight",
+            "shape": "rise",
+            "hue": 82.0,
+            "c_peak": 0.0182,
+            "l_rise_from": 55.0,
+            "l_peak": 80.0,
+            "skin_residual": 0.15384615384615385
+          }
+        ],
+        "white_guard": [
+          90.0,
+          97.0
+        ],
+        "hue_shifts": [
+          {
+            "center": 140.0,
+            "halfwidth": 45.76,
+            "delta": -18.0
+          },
+          {
+            "center": 250.0,
+            "halfwidth": 40.04,
+            "delta": -10.8
+          },
+          {
+            "center": 20.0,
+            "halfwidth": 17.16,
+            "delta": 7.2
+          },
+          {
+            "center": 50.0,
+            "halfwidth": 22.88,
+            "delta": -3.6,
+            "skin_exempt": true
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 140.0,
+            "halfwidth": 45.0,
+            "gain": 0.81
+          },
+          {
+            "center": 250.0,
+            "halfwidth": 40.0,
+            "gain": 0.8859999999999999
+          },
+          {
+            "center": 320.0,
+            "halfwidth": 30.0,
+            "gain": 0.8480000000000001
+          },
+          {
+            "center": 95.0,
+            "halfwidth": 20.0,
+            "gain": 0.9049999999999999
+          }
+        ],
+        "global_sat": 0.9239999999999999,
+        "vibrance": {
+          "c_lo": 0.06,
+          "c_hi": 0.1,
+          "gain": 1.076
+        },
+        "chroma_knee": {
+          "start": 0.13799999999999998,
+          "slope": 0.8
+        },
+        "lum_desat_high": {
+          "l_start": 85.0,
+          "l_end": 98.0,
+          "gain_end": 0.6200000000000001
+        },
+        "skin_hue_residual": 0.08333333333333333,
+        "skin_tone_residual": 0.15384615384615385,
+        "skin_sat_clamp": [
+          0.97,
+          1.03
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.031200000000000002
+        },
+        "opacity_rec": "75-85%",
+        "grain_rec": "OFF (backup: ~5/100, dim indoor portraits only)"
+      }
+    },
+    {
+      "name": "Meridian",
+      "file": "Meridian.cube",
+      "version": "1.0",
+      "group": "generalist",
+      "description": "Honest bright daylight: measured-neutral gray axis, open shadows, airy whites",
+      "opacity_rec": "100% daily; 70% ~ brighter cleaner Standard",
+      "grain_rec": "OFF",
+      "sha256": "1cf9525a9e4e4b3bbcd96018ad5bae63041a33d4f45969d70f029fa614b9be37",
+      "recipe": {
+        "description": "Honest bright daylight: measured-neutral gray axis, open shadows, airy whites",
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.02,
+              0.029000000000000005
+            ],
+            [
+              0.1,
+              0.1216
+            ],
+            [
+              0.466,
+              0.51928
+            ],
+            [
+              0.83,
+              0.8623999999999999
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "0": 1.54,
+            "3": 1.09,
+            "5": 0.55
+          }
+        },
+        "hue_c_gate": [
+          0.03,
+          0.06
+        ],
+        "hue_shifts": [
+          {
+            "center": 200.0,
+            "halfwidth": 27.700000000000003,
+            "delta": 9.600000000000001,
+            "gamut_fade": [
+              0.55,
+              0.78
+            ]
+          },
+          {
+            "center": 255.0,
+            "halfwidth": 33.24,
+            "delta": 4.800000000000001,
+            "gamut_fade": [
+              0.55,
+              0.78
+            ]
+          },
+          {
+            "center": 145.0,
+            "halfwidth": 44.32000000000001,
+            "delta": -9.600000000000001
+          },
+          {
+            "center": 25.0,
+            "halfwidth": 16.62,
+            "delta": 4.800000000000001
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 250.0,
+            "halfwidth": 30.0,
+            "gain": 1.09
+          },
+          {
+            "center": 145.0,
+            "halfwidth": 40.0,
+            "gain": 0.9099999999999999
+          },
+          {
+            "center": 100.0,
+            "halfwidth": 20.0,
+            "gain": 0.9099999999999999
+          }
+        ],
+        "vibrance": {
+          "c_lo": 0.06,
+          "c_hi": 0.12,
+          "gain": 1.108
+        },
+        "sat_compress_high": {
+          "c_start": 0.2,
+          "gain": 0.8919999999999999
+        },
+        "lum_desat_shadow": {
+          "l_end": 15.0,
+          "gain_at_0": 0.8200000000000001
+        },
+        "lum_desat_high": {
+          "l_start": 88.0,
+          "l_end": 98.0,
+          "gain_end": 0.73
+        },
+        "skin_lightening": {
+          "delta_lstar": 2.7,
+          "l_center": 57.0,
+          "l_sigma": 12.0,
+          "l_zero_lo": 40.0,
+          "l_zero_hi": 75.0
+        },
+        "skin_hue_residual": 0.125,
+        "skin_sat_clamp": [
+          0.97,
+          1.03
+        ],
+        "gray_guard": {
+          "c_in": 0.015,
+          "limit": 0.0
+        },
+        "opacity_rec": "100% daily; 70% ~ brighter cleaner Standard",
+        "grain_rec": "OFF",
+        "skin_tone_residual": 0.19999999999999998
+      }
+    },
+    {
+      "name": "Matinee",
+      "file": "Matinee.cube",
+      "version": "1.0",
+      "group": "generalist",
+      "description": "All-day cinema print: deep structured blacks, zero-cast midband, slate/ivory whisper",
+      "opacity_rec": "100% ok all day; daily sweet spot 80%; below 60% not recommended",
+      "grain_rec": "OFF (backup: weakest level, night/overcast only)",
+      "sha256": "b910b7e37fbd933b5942a39a88435bdda419727df4e7aae52b95effeaaade670",
+      "recipe": {
+        "description": "All-day cinema print: deep structured blacks, zero-cast midband, slate/ivory whisper",
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.05,
+              0.010939999999999998
+            ],
+            [
+              0.1,
+              0.050864999999999994
+            ],
+            [
+              0.2,
+              0.15102
+            ],
+            [
+              0.3,
+              0.26125000000000004
+            ],
+            [
+              0.4,
+              0.375355
+            ],
+            [
+              0.466,
+              0.450655
+            ],
+            [
+              0.6,
+              0.6003099999999999
+            ],
+            [
+              0.75,
+              0.7591450000000001
+            ],
+            [
+              0.9,
+              0.92542
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "10": 0.39549999999999996
+          }
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "bump",
+            "hue": 258.0,
+            "c_peak": 0.026999999999999996,
+            "l_peak": 18.0,
+            "halfwidth": 20.0,
+            "black_guard": 6.0,
+            "skin_residual": 0.11666666666666665
+          },
+          {
+            "kind": "highlight",
+            "shape": "bump",
+            "hue": 78.0,
+            "c_peak": 0.018000000000000002,
+            "l_peak": 78.0,
+            "halfwidth": 22.0,
+            "skin_residual": 0.21666666666666667
+          }
+        ],
+        "white_guard": [
+          90.0,
+          96.0
+        ],
+        "hue_shifts": [
+          {
+            "center": 140.0,
+            "halfwidth": 40.669999999999995,
+            "delta": -15.2
+          },
+          {
+            "center": 255.0,
+            "halfwidth": 29.049999999999997,
+            "delta": 7.6
+          },
+          {
+            "center": 25.0,
+            "halfwidth": 17.43,
+            "delta": 5.699999999999999
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 210.0,
+            "halfwidth": 30.0,
+            "gain": 0.77
+          },
+          {
+            "center": 140.0,
+            "halfwidth": 40.0,
+            "gain": 0.77
+          },
+          {
+            "center": 260.0,
+            "halfwidth": 25.0,
+            "gain": 0.9079999999999999
+          },
+          {
+            "center": 330.0,
+            "halfwidth": 30.0,
+            "gain": 0.8619999999999999
+          }
+        ],
+        "global_sat": 0.9309999999999999,
+        "lum_desat_shadow": {
+          "l_end": 30.0,
+          "gain_at_0": 0.77
+        },
+        "lum_desat_high": {
+          "l_start": 85.0,
+          "l_end": 100.0,
+          "gain_end": 0.8619999999999999
+        },
+        "chroma_knee": {
+          "start": 0.1265,
+          "slope": 0.65
+        },
+        "skin_hue_residual": 0.0,
+        "skin_sat_clamp": [
+          0.982,
+          1.02
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.03
+        },
+        "opacity_rec": "100% ok all day; daily sweet spot 80%; below 60% not recommended",
+        "grain_rec": "OFF (backup: weakest level, night/overcast only)",
+        "skin_tone_residual": 0.09999999999999999
+      }
+    },
+    {
+      "name": "Postcard",
+      "file": "Postcard.cube",
+      "version": "1.0",
+      "group": "generalist",
+      "description": "Reversal-film travel look: clean whites, hue-purified confident color, micro-density",
+      "opacity_rec": "sweet spot 75%; postcard subjects 100%",
+      "grain_rec": "OFF (backup: lowest, only as dither for big-sky banding worries)",
+      "sha256": "a3236e384c89fbc6ea8bf52c3f3570cb52316d8756a7b09bff2f0f282452c750",
+      "recipe": {
+        "description": "Reversal-film travel look: clean whites, hue-purified confident color, micro-density",
+        "tone": {
+          "domain": "lstar",
+          "points": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              12.0,
+              7.25
+            ],
+            [
+              25.0,
+              19.3
+            ],
+            [
+              50.0,
+              49.05
+            ],
+            [
+              70.0,
+              74.75
+            ],
+            [
+              85.0,
+              87.85
+            ],
+            [
+              100.0,
+              100.0
+            ]
+          ]
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "low",
+            "hue": 250.0,
+            "c_peak": 0.0192,
+            "l_peak": 12.0,
+            "l_zero": 42.0,
+            "skin_residual": 0.125
+          },
+          {
+            "kind": "highlight",
+            "shape": "rise",
+            "hue": 85.0,
+            "c_peak": 0.0096,
+            "l_rise_from": 56.0,
+            "l_peak": 78.0,
+            "skin_residual": 0.125
+          }
+        ],
+        "white_guard": [
+          90.0,
+          96.0
+        ],
+        "hue_shifts": [
+          {
+            "center": 222.0,
+            "halfwidth": 55.400000000000006,
+            "delta": 14.4,
+            "l_gate": {
+              "lo": 28.0,
+              "hi": 40.0,
+              "floor": 0.25
+            }
+          },
+          {
+            "center": 265.0,
+            "halfwidth": 33.24,
+            "delta": -6.4
+          },
+          {
+            "center": 120.0,
+            "halfwidth": 48.752,
+            "delta": 11.200000000000001
+          },
+          {
+            "center": 155.0,
+            "halfwidth": 37.672000000000004,
+            "delta": -9.600000000000001
+          },
+          {
+            "center": 18.0,
+            "halfwidth": 28.808000000000003,
+            "delta": 6.4
+          },
+          {
+            "center": 100.0,
+            "halfwidth": 33.24,
+            "delta": -9.600000000000001
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 240.0,
+            "halfwidth": 60.0,
+            "gain": 1.2000000000000002
+          },
+          {
+            "center": 135.0,
+            "halfwidth": 50.0,
+            "gain": 1.12
+          },
+          {
+            "center": 20.0,
+            "halfwidth": 28.0,
+            "gain": 1.1600000000000001
+          },
+          {
+            "center": 95.0,
+            "halfwidth": 30.0,
+            "gain": 1.1
+          }
+        ],
+        "global_sat": 1.0,
+        "vibrance": {
+          "c_lo": 0.04,
+          "c_hi": 0.13,
+          "gain": 1.12
+        },
+        "chroma_knee": {
+          "start": 0.15525,
+          "slope": 0.3333,
+          "cap": 0.21849999999999997
+        },
+        "lum_desat_shadow": {
+          "l_end": 8.0,
+          "gain_at_0": 0.76
+        },
+        "lum_desat_high": {
+          "l_start": 88.0,
+          "l_end": 97.0,
+          "gain_end": 0.6000000000000001
+        },
+        "micro_density": {
+          "strength": 0.06,
+          "c_lo": 0.06,
+          "c_hi": 0.16,
+          "l_lo": 30.0,
+          "l_hi": 80.0,
+          "skin_residual": 0.4
+        },
+        "skin_hue_residual": 0.15625,
+        "skin_sat_clamp": [
+          0.98,
+          1.016
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.021599999999999998
+        },
+        "opacity_rec": "sweet spot 75%; postcard subjects 100%",
+        "grain_rec": "OFF (backup: lowest, only as dither for big-sky banding worries)",
+        "skin_tone_residual": 0.125
+      }
+    },
+    {
+      "name": "NightMarket",
+      "file": "NightMarket.cube",
+      "version": "1.0",
+      "group": "specialist",
+      "description": "Standard-base mixed-light night: slate shadows, gold-amber lamps, LED-safe chroma",
+      "opacity_rec": "75-85%",
+      "grain_rec": "OFF (backup: ~8/100, ISO<=3200 only)",
+      "sha256": "72c24b11795a8a80191e5cb195ed7c7f50643a730b8261de47ce7761a8d9a019",
+      "recipe": {
+        "description": "Standard-base mixed-light night: slate shadows, gold-amber lamps, LED-safe chroma",
+        "norm_shoulder": {
+          "start": 0.7,
+          "end_slope": 0.2
+        },
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.036
+            ],
+            [
+              0.1,
+              0.10999999999999999
+            ],
+            [
+              0.466,
+              0.43639999999999995
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "2": 1.2000000000000002,
+            "3": 1.0
+          }
+        },
+        "toe_tint": {
+          "hue": 255.0,
+          "chroma": 0.0224,
+          "l_end": 14.0
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "low",
+            "hue": 255.0,
+            "c_peak": 0.0336,
+            "l_peak": 12.0,
+            "l_zero": 45.0,
+            "skin_residual": 0.10714285714285715
+          },
+          {
+            "kind": "highlight",
+            "shape": "rise",
+            "hue": 65.0,
+            "c_peak": 0.0168,
+            "l_rise_from": 45.0,
+            "l_peak": 80.0,
+            "skin_residual": 0.07142857142857144
+          }
+        ],
+        "attractors": [
+          {
+            "target": 48.0,
+            "lo": 20.0,
+            "hi": 75.0,
+            "strength": 0.55,
+            "skin_residual": 0.10526315789473685
+          }
+        ],
+        "hue_shifts": [
+          {
+            "center": 258.0,
+            "halfwidth": 32.536,
+            "delta": -15.2
+          },
+          {
+            "center": 150.0,
+            "halfwidth": 40.669999999999995,
+            "delta": 15.2
+          },
+          {
+            "center": 320.0,
+            "halfwidth": 29.049999999999997,
+            "delta": -9.5
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 48.0,
+            "halfwidth": 25.0,
+            "gain": 0.715,
+            "l_band": [
+              63.0,
+              100.0,
+              8.0,
+              1.0
+            ],
+            "c_gate": [
+              0.13,
+              0.17
+            ]
+          },
+          {
+            "center": 150.0,
+            "halfwidth": 35.0,
+            "gain": 0.715
+          },
+          {
+            "center": 258.0,
+            "halfwidth": 28.0,
+            "gain": 0.9049999999999999
+          },
+          {
+            "center": 320.0,
+            "halfwidth": 25.0,
+            "gain": 0.81
+          }
+        ],
+        "chroma_caps": [
+          {
+            "center": 258.0,
+            "halfwidth": 28.0,
+            "cap": 0.24
+          }
+        ],
+        "global_sat": 0.8859999999999999,
+        "lum_desat_shadow": {
+          "l_end": 12.0,
+          "gain_at_0": 0.715
+        },
+        "lum_desat_high": {
+          "l_start": 80.0,
+          "l_end": 95.0,
+          "gain_end": 0.525
+        },
+        "chroma_knee": {
+          "start": 0.22999999999999998,
+          "slope": 0.6,
+          "cap": 0.368
+        },
+        "skin_hue_residual": 0.2105263157894737,
+        "skin_sat_clamp": [
+          0.96,
+          1.02
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.036399999999999995
+        },
+        "opacity_rec": "75-85%",
+        "grain_rec": "OFF (backup: ~8/100, ISO<=3200 only)",
+        "skin_tone_residual": 0.10714285714285715
+      }
+    },
+    {
+      "name": "DuskTide",
+      "file": "DuskTide.cube",
+      "version": "1.0",
+      "group": "specialist",
+      "description": "Blue hour by the water: indigo shadows, lamp-gold highlights, two-layer blues",
+      "opacity_rec": "70-85% (designed dense; 70% is a finished quiet dusk)",
+      "grain_rec": "OFF (backup: ~4/100 fine)",
+      "sha256": "3f43fe2baefe5828afe7ca7d24aa73a392ebf4c8cb903f8253203c69174eea11",
+      "recipe": {
+        "description": "Blue hour by the water: indigo shadows, lamp-gold highlights, two-layer blues",
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.024
+            ],
+            [
+              0.1,
+              0.1
+            ],
+            [
+              0.466,
+              0.4268
+            ],
+            [
+              0.8,
+              0.78
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "2": 1.2000000000000002,
+            "4": 0.3
+          }
+        },
+        "tone_skin_relief": 0.5,
+        "toe_tint": {
+          "hue": 265.0,
+          "chroma": 0.0144,
+          "l_end": 12.0
+        },
+        "midtone_bias": {
+          "hue": 275.0,
+          "chroma": 0.0144,
+          "l_center": 50.0,
+          "l_sigma": 16.0,
+          "l_zero_lo": 12.0,
+          "l_zero_hi": 88.0,
+          "skin_residual": 0.0
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "low",
+            "hue": 262.0,
+            "c_peak": 0.0288,
+            "l_peak": 12.0,
+            "l_zero": 50.0,
+            "skin_residual": 0.04166666666666667
+          },
+          {
+            "kind": "highlight",
+            "shape": "rise",
+            "hue": 58.0,
+            "c_peak": 0.024,
+            "l_rise_from": 50.0,
+            "l_peak": 80.0,
+            "skin_residual": 0.04166666666666667
+          }
+        ],
+        "white_guard": [
+          90.0,
+          97.0
+        ],
+        "hue_shifts": [
+          {
+            "center": 205.0,
+            "halfwidth": 28.599999999999998,
+            "delta": 18.0
+          },
+          {
+            "center": 250.0,
+            "halfwidth": 34.32,
+            "delta": 10.8
+          },
+          {
+            "center": 320.0,
+            "halfwidth": 28.599999999999998,
+            "delta": 7.2
+          },
+          {
+            "center": 140.0,
+            "halfwidth": 40.04,
+            "delta": -10.8
+          }
+        ],
+        "attractors": [
+          {
+            "target": 50.0,
+            "lo": 25.0,
+            "hi": 70.0,
+            "strength": 0.45,
+            "skin_residual": 0.11111111111111112
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 255.0,
+            "halfwidth": 35.0,
+            "gain": 1.0950000000000002,
+            "l_band": [
+              25.0,
+              65.0,
+              10.0,
+              10.0
+            ]
+          },
+          {
+            "center": 48.0,
+            "halfwidth": 25.0,
+            "gain": 0.9049999999999999
+          },
+          {
+            "center": 140.0,
+            "halfwidth": 35.0,
+            "gain": 0.772
+          }
+        ],
+        "global_sat": 0.943,
+        "lum_desat_shadow": {
+          "l_end": 12.0,
+          "gain_at_0": 0.8480000000000001,
+          "exempt_hue": [
+            240.0,
+            290.0
+          ]
+        },
+        "lum_desat_high": {
+          "l_start": 85.0,
+          "l_end": 97.0,
+          "gain_end": 0.715
+        },
+        "skin_hue_residual": 0.11111111111111112,
+        "skin_sat_clamp": [
+          0.95,
+          1.02
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.0312
+        },
+        "opacity_rec": "70-85% (designed dense; 70% is a finished quiet dusk)",
+        "grain_rec": "OFF (backup: ~4/100 fine)",
+        "skin_tone_residual": 0.125
+      }
+    },
+    {
+      "name": "Canopy",
+      "file": "Canopy.cube",
+      "version": "1.0",
+      "group": "specialist",
+      "description": "Tropical greenery daily: luminance-layered greens, deep not neon, skin isolated",
+      "opacity_rec": "75-90%",
+      "grain_rec": "OFF (backup: ~4/100 fine)",
+      "sha256": "85b3dc4b29906a0dc5325fc0403a9b885523b92eaa1448157fbffc64663c665e",
+      "recipe": {
+        "description": "Tropical greenery daily: luminance-layered greens, deep not neon, skin isolated",
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.0228
+            ],
+            [
+              0.466,
+              0.48348
+            ],
+            [
+              0.75,
+              0.7918000000000001
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "1": 1.1520000000000001,
+            "3": 0.3
+          }
+        },
+        "toe_tint": {
+          "hue": 165.0,
+          "chroma": 0.013999999999999999,
+          "l_end": 12.0
+        },
+        "midtone_bias": {
+          "hue": 90.0,
+          "chroma": 0.0112,
+          "l_center": 80.0,
+          "l_sigma": 8.0,
+          "l_zero_lo": 68.0,
+          "l_zero_hi": 92.0,
+          "skin_residual": 0.10714285714285715
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "low",
+            "hue": 172.0,
+            "c_peak": 0.0168,
+            "l_peak": 10.0,
+            "l_zero": 40.0,
+            "skin_residual": 0.10714285714285715
+          },
+          {
+            "kind": "highlight",
+            "shape": "rise",
+            "hue": 85.0,
+            "c_peak": 0.0168,
+            "l_rise_from": 52.0,
+            "l_peak": 80.0,
+            "skin_residual": 0.10714285714285715
+          }
+        ],
+        "layered_hue": {
+          "center": 128.0,
+          "halfwidth": 48.64,
+          "delta_lo": 26.400000000000002,
+          "delta_hi": -17.6,
+          "l_lo": 40.0,
+          "l_hi": 65.0,
+          "hard_cut_below": 90.0,
+          "gamut_fade": [
+            0.65,
+            0.85
+          ]
+        },
+        "hue_shifts": [
+          {
+            "center": 195.0,
+            "halfwidth": 24.32,
+            "delta": 8.8
+          },
+          {
+            "center": 18.0,
+            "halfwidth": 21.887999999999998,
+            "delta": 8.8
+          }
+        ],
+        "hue_lum": [
+          {
+            "center": 135.0,
+            "halfwidth": 40.0,
+            "gain": 0.8559999999999999,
+            "l_band": [
+              25.0,
+              70.0,
+              10.0,
+              10.0
+            ],
+            "hard_cut_below": 90.0
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 135.0,
+            "halfwidth": 40.0,
+            "gain": 0.808,
+            "hard_cut_below": 90.0
+          },
+          {
+            "center": 105.0,
+            "halfwidth": 18.0,
+            "gain": 0.76
+          },
+          {
+            "center": 200.0,
+            "halfwidth": 20.0,
+            "gain": 0.952
+          }
+        ],
+        "chroma_caps": [
+          {
+            "center": 135.0,
+            "halfwidth": 45.0,
+            "cap": 0.19
+          }
+        ],
+        "global_sat": 0.952,
+        "vibrance": {
+          "c_lo": 0.05,
+          "c_hi": 0.1,
+          "gain": 1.12
+        },
+        "chroma_knee": {
+          "start": 0.1725,
+          "slope": 0.7
+        },
+        "lum_desat_high": {
+          "l_start": 88.0,
+          "l_end": 98.0,
+          "gain_end": 0.712
+        },
+        "skin_hue_residual": 0.06818181818181818,
+        "skin_sat_clamp": [
+          0.96,
+          1.03
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.0224
+        },
+        "opacity_rec": "75-90%",
+        "grain_rec": "OFF (backup: ~4/100 fine)",
+        "skin_tone_residual": 0.10714285714285715
+      }
+    },
+    {
+      "name": "Skylight",
+      "file": "Skylight.cube",
+      "version": "1.0",
+      "group": "generalist",
+      "description": "Editor's daily: opened shadows, compressed highlights, vivid clean color, zero cast",
+      "opacity_rec": "75-100%; harsh-light rescue at 100%",
+      "grain_rec": "OFF",
+      "sha256": "b734146c8a96179c80e7065a40cf3656e10dd2b776a4033df70c7eca16d58d32",
+      "recipe": {
+        "description": "Editor's daily: opened shadows, compressed highlights, vivid clean color, zero cast",
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.02
+            ],
+            [
+              0.1,
+              0.145
+            ],
+            [
+              0.25,
+              0.302
+            ],
+            [
+              0.466,
+              0.5
+            ],
+            [
+              0.75,
+              0.775
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "3": 1.05,
+            "5": 0.6
+          }
+        },
+        "hue_shifts": [
+          {
+            "center": 205.0,
+            "halfwidth": 28.0,
+            "delta": 6.0,
+            "gamut_fade": [
+              0.6,
+              0.82
+            ]
+          },
+          {
+            "center": 140.0,
+            "halfwidth": 40.0,
+            "delta": -4.0
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 240.0,
+            "halfwidth": 35.0,
+            "gain": 1.1
+          },
+          {
+            "center": 135.0,
+            "halfwidth": 40.0,
+            "gain": 1.06
+          },
+          {
+            "center": 20.0,
+            "halfwidth": 25.0,
+            "gain": 1.05
+          }
+        ],
+        "global_sat": 1.02,
+        "vibrance": {
+          "c_lo": 0.06,
+          "c_hi": 0.14,
+          "gain": 1.15
+        },
+        "chroma_knee": {
+          "start": 0.16,
+          "slope": 0.6,
+          "cap": 0.24
+        },
+        "lum_desat_shadow": {
+          "l_end": 10.0,
+          "gain_at_0": 0.92
+        },
+        "lum_desat_high": {
+          "l_start": 90.0,
+          "l_end": 98.0,
+          "gain_end": 0.85,
+          "c_fade": [
+            0.1,
+            0.2
+          ]
+        },
+        "skin_lightening": {
+          "delta_lstar": 1.5,
+          "l_center": 58.0,
+          "l_sigma": 14.0,
+          "l_zero_lo": 35.0,
+          "l_zero_hi": 80.0
+        },
+        "skin_hue_residual": 0.15,
+        "skin_sat_clamp": [
+          0.98,
+          1.05
+        ],
+        "gray_guard": {
+          "c_in": 0.015,
+          "limit": 0.0
+        },
+        "opacity_rec": "75-100%; harsh-light rescue at 100%",
+        "grain_rec": "OFF"
+      }
+    },
+    {
+      "name": "Lowsun",
+      "file": "Lowsun.cube",
+      "version": "1.0",
+      "group": "specialist",
+      "description": "Golden hour: gold midtones/highlights vs cool shadows, early shoulder, warm skin",
+      "opacity_rec": "70-90%",
+      "grain_rec": "OFF (backup: ~5/100)",
+      "sha256": "310626bb7c23f343b56006a7eca349173035bc8349aecb8acb640c45ad98c0ff",
+      "recipe": {
+        "description": "Golden hour: gold midtones/highlights vs cool shadows, early shoulder, warm skin",
+        "tone": {
+          "domain": "code",
+          "points": [
+            [
+              0.0,
+              0.012
+            ],
+            [
+              0.1,
+              0.096
+            ],
+            [
+              0.466,
+              0.4562
+            ],
+            [
+              0.72,
+              0.718
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "slopes": {
+            "2": 1.12,
+            "4": 0.55
+          }
+        },
+        "midtone_bias": {
+          "hue": 60.0,
+          "chroma": 0.014,
+          "l_center": 55.0,
+          "l_sigma": 18.0,
+          "l_zero_lo": 12.0,
+          "l_zero_hi": 90.0
+        },
+        "splits": [
+          {
+            "kind": "shadow",
+            "shape": "low",
+            "hue": 250.0,
+            "c_peak": 0.014,
+            "l_peak": 12.0,
+            "l_zero": 48.0
+          },
+          {
+            "kind": "highlight",
+            "shape": "rise",
+            "hue": 68.0,
+            "c_peak": 0.016,
+            "l_rise_from": 50.0,
+            "l_peak": 82.0
+          }
+        ],
+        "white_guard": [
+          92.0,
+          98.0
+        ],
+        "hue_shifts": [
+          {
+            "center": 40.0,
+            "halfwidth": 25.0,
+            "delta": 4.0
+          },
+          {
+            "center": 15.0,
+            "halfwidth": 18.0,
+            "delta": 5.0
+          },
+          {
+            "center": 250.0,
+            "halfwidth": 30.0,
+            "delta": -6.0,
+            "gamut_fade": [
+              0.6,
+              0.82
+            ]
+          },
+          {
+            "center": 130.0,
+            "halfwidth": 40.0,
+            "delta": -10.0
+          },
+          {
+            "center": 50.0,
+            "halfwidth": 20.0,
+            "delta": 2.0,
+            "skin_exempt": true
+          }
+        ],
+        "sat_ops": [
+          {
+            "center": 250.0,
+            "halfwidth": 30.0,
+            "gain": 0.92
+          },
+          {
+            "center": 130.0,
+            "halfwidth": 40.0,
+            "gain": 0.88
+          },
+          {
+            "center": 48.0,
+            "halfwidth": 30.0,
+            "gain": 1.08,
+            "l_band": [
+              40.0,
+              85.0,
+              10.0,
+              8.0
+            ]
+          },
+          {
+            "center": 330.0,
+            "halfwidth": 25.0,
+            "gain": 0.95
+          }
+        ],
+        "lum_desat_high": {
+          "l_start": 85.0,
+          "l_end": 97.0,
+          "gain_end": 0.85
+        },
+        "chroma_knee": {
+          "start": 0.17,
+          "slope": 0.6,
+          "cap": 0.26
+        },
+        "skin_hue_residual": 0.15,
+        "skin_tone_residual": 0.3,
+        "skin_sat_clamp": [
+          0.97,
+          1.06
+        ],
+        "gray_guard": {
+          "c_in": 0.01,
+          "limit": 0.018
+        },
+        "opacity_rec": "70-90%",
+        "grain_rec": "OFF (backup: ~5/100)"
+      }
+    }
+  ]
+}

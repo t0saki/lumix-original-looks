@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+
+# Personal photo previews rendered from the author's private library (kept local)
+previews/sheet_*.jpg
+previews/xlook_*.jpg
+previews/user_edit_reference.jpg
+preview_images.txt
+
+# Full-resolution per-look demo renders (grids / hero / web copies are committed)
+previews/demo/base_*.jpg
+previews/demo/look_*.jpg

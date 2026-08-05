@@ -33,7 +33,7 @@
 
 ## 预览
 
-![同一场景 × 全套十支](previews/demo/grid_P1035574.jpg)
+![同一场景 × 全套十支](previews/demo/hero_P1035574.jpg)
 
 ![强度实测 vs 常见参考 LUT](previews/strength_chart.png)
 

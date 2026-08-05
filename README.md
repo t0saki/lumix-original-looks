@@ -33,7 +33,7 @@ Film grain: recommended **OFF** for all looks (backup low values are noted in `l
 
 ## Previews
 
-![One scene across the whole suite](previews/demo/grid_P1035574.jpg)
+![One scene across the whole suite](previews/demo/hero_P1035574.jpg)
 
 ![Measured look strength vs common reference LUTs](previews/strength_chart.png)
 

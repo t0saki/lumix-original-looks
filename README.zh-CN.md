@@ -74,3 +74,8 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 ## 许可
 
 [MIT](LICENSE)。`.cube` 文件可自由使用（含商用）；欢迎署名。
+
+
+## Latent 潜影 (second set)
+
+Twelve film / "German-look" LUTs designed from scratch — see [`latent/`](latent/README.md).

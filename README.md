@@ -90,3 +90,8 @@ These looks take *directional* inspiration from film families — C-41 negative,
 ## License
 
 [MIT](LICENSE). The `.cube` files may be used freely, including commercially; attribution appreciated.
+
+
+## Latent 潜影 (second set)
+
+Twelve film / "German-look" LUTs designed from scratch — see [`latent/`](latent/README.md).
